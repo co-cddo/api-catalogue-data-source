@@ -6,18 +6,18 @@ from bs4 import BeautifulSoup, NavigableString, Tag
 
 
 # function to get URLs from page
-def get_url_title(url):
+def get_api_page_urls(url):
     page = requests.get(url)
     soup = BeautifulSoup(page.text, 'html.parser')
     # finds all links to API/API Standards as listed on the page
     links = [a['href'] for a in soup.find_all('a', href=True)]
     filtered_divs = list(filter(lambda x: '/developer/api-catalogue/' in x, links))
     beg = 'https://digital.nhs.uk'
-    catalogue_urls = []
+    api_page_urls = []
     for link in filtered_divs:
         url_combined = beg + link
-        catalogue_urls.append(url_combined)
-    return catalogue_urls
+        api_page_urls.append(url_combined)
+    return api_page_urls
 
 
 # function to pull out the title of the API
@@ -56,7 +56,7 @@ def get_api_info(url):
     return headers_text_dict
 
 
-# pulls out the overview from the dictionary from the api-info function, inputs title and creates a list of dictionaries
+# pulls out the data we need to fit our metadata model
 def create_filtered_dict(apis, unfiltered_dict, title):
     new_dict = {}
     description = unfiltered_dict['overview']
@@ -69,18 +69,16 @@ def create_filtered_dict(apis, unfiltered_dict, title):
     return new_dict
 
 
-# construction of the function
-def get_list_of_dicts():
+def get_list_of_api_details():
     filtered_list = []
-    URL = 'https://digital.nhs.uk/developer/api-catalogue'
-    api_urls = get_url_title(URL)
+    url = 'https://digital.nhs.uk/developer/api-catalogue'
+    api_urls = get_api_page_urls(url)
     for apis in api_urls:
         title = get_api_title(apis)
         if 'standard' not in title:
             unfiltered_dict = get_api_info(apis)
-            initial_dict = create_filtered_dict(apis, unfiltered_dict, title)
-            filtered_list.append(initial_dict)
-
+            filtered_dict = create_filtered_dict(apis, unfiltered_dict, title)
+            filtered_list.append(filtered_dict)
     return filtered_list
 
 
@@ -100,5 +98,5 @@ def write_json_to_file(v1alpha_json_object):
 
 
 if __name__ == '__main__':
-    v1alpha_json_object = create_v1alpha_json_object(get_list_of_dicts())
+    v1alpha_json_object = create_v1alpha_json_object(get_list_of_api_details())
     write_json_to_file(v1alpha_json_object)
