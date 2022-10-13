@@ -598,7 +598,7 @@
         {
             "api-version": "api.gov.uk/v1alpha",
             "data": {
-                "name": "Out of hours",
+                "name": "Out Of Hours",
                 "description": " \n\n \n\n\n\n\u00a0\n\nUse this message integration to send details of an out of hours (OOH) assessment from an out of hours GP system to the patient's registered GP.\u00a0\u00a0\n\nIt uses MESH to send and receive messages.\n\nThe message payload is actually not that standard, as explained below. \n\n",
                 "url": "https://digital.nhs.uk/developer/api-catalogue/out-of-hours",
                 "contact": "https://digital.nhs.uk/developer/help-and-support",
