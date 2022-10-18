@@ -500,7 +500,7 @@
             "api-version": "api.gov.uk/v1alpha",
             "data": {
                 "name": "NHS App API",
-                "description": " Use this API to engage with users of the NHS App - a simple and secure way for patients registered with a GP surgery in England to access a range of services on their smartphone or tablet. You can: \n\nsend in-app messages to specific users of the NHS App\n\nsend native Apple or Android push notifications to mobile devices registered by specific users of the NHS App\n\n ",
+                "description": " Use this API to engage with users of the NHS App - a simple and secure way for patients registered with a GP surgery in England to access a range of services on their smartphone or tablet. You can: \n\nsend in-app messages to specific users of the NHS App\n\ninclude keyword replies to in-app messages\n\nsend native Apple or Android push notifications to mobile devices registered by specific users of the NHS App\n\n ",
                 "url": "https://digital.nhs.uk/developer/api-catalogue/nhs-app",
                 "contact": "https://digital.nhs.uk/developer/help-and-support",
                 "organisation": "NHS Digital",
