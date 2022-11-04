@@ -203,7 +203,7 @@
             "api-version": "api.gov.uk/v1alpha",
             "data": {
                 "name": "Electronic Prescription Service - FHIR API",
-                "description": " .codeinline.example {word-wrap: anywhere;} Use this API to access the Electronic Prescription Service (EPS). EPS is the national service used to send electronic prescription messages between prescribers and community dispensers. Prescribers in primary and secondary care can: \n\ncreate a prescription\n\nencode data so the prescription is ready to sign\n\ncancel a prescription\n\n Prescribers create and cancel a prescription but the prescribing system encodes data so the prescription is ready to sign. Dispensers can: \n\ndownload an individual prescription from EPS\n\ndownload a batch of prescriptions from EPS\n\nverify a prescription's signature\n\nreturn a prescription to EPS\n\nsubmit a dispense notification to EPS\n\nwithdraw a dispense notification from EPS\n\nsubmit a dispense claim\n\n You cannot currently use this API to: \n\nview a prescription's detailed dispense history\n\n ",
+                "description": " .codeinline.example {word-wrap: anywhere;} Use this API to access the Electronic Prescription Service (EPS). EPS is the national service used to send electronic prescription messages between prescribers and community dispensers. Prescribers in primary and secondary care can: \n\ncreate a prescription\n\nencode data so the prescription is ready to sign\n\ncancel a prescription\n\n Creating and cancelling a prescription are both done by the prescriber. Encoding data so the prescription is ready to sign is done by the prescribing system. Dispensers can: \n\ndownload an individual prescription from EPS\n\ndownload a batch of prescriptions from EPS\n\nverify a prescription's signature\n\nreturn a prescription to EPS\n\nsubmit a dispense notification to EPS\n\nwithdraw a dispense notification from EPS\n\nsubmit a dispense claim\n\n You cannot currently use this API to: \n\nview a prescription's detailed dispense history\n\n ",
                 "url": "https://digital.nhs.uk/developer/api-catalogue/electronic-prescription-service-fhir",
                 "contact": "https://digital.nhs.uk/developer/help-and-support",
                 "organisation": "NHS Digital",
@@ -736,6 +736,17 @@
                 "contact": "https://digital.nhs.uk/developer/help-and-support",
                 "organisation": "NHS Digital",
                 "documentation-url": "https://digital.nhs.uk/developer/api-catalogue/service-search"
+            }
+        },
+        {
+            "api-version": "api.gov.uk/v1alpha",
+            "data": {
+                "name": "Service Search - REST API",
+                "description": " Use this API to find information about NHS services, including lists of NHS organisation types and organisations. You can: \n\nsearch for NHS organisation types, for example, GP practices, hospitals\n\nsearch for NHS organisations that provide services listed in NHS service near you, for example, Leeds General Infirmary\n\n ",
+                "url": "https://digital.nhs.uk/developer/api-catalogue/service-search-rest",
+                "contact": "https://digital.nhs.uk/developer/help-and-support",
+                "organisation": "NHS Digital",
+                "documentation-url": "https://digital.nhs.uk/developer/api-catalogue/service-search-rest"
             }
         },
         {
