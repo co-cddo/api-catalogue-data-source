@@ -268,6 +268,17 @@
         {
             "api-version": "api.gov.uk/v1alpha",
             "data": {
+                "name": "e-Referral Service Patient Care \u2013 FHIR API",
+                "description": " Use this API to retrieve referrals for a patient from the e-Referral Service (e-RS) and, if applicable, retrieve service information for a referral that has a current appointment booking with a service or is currently deferred to a service. This API is designed to be used by the Patient Care Aggregator. As an integrated system acting on behalf of a patient, you can: \n\nretrieve a patient's referrals\n\nretrieve information for a single service\n\n You cannot use this API to: \n\nget patient personal demographic details \u2013 instead, use the Personal Demographic Service (PDS)\n\n You can access the following data: \n\na summary of each active referral\n\n Access modes This API has one access mode: \n\n\n\n\n\nAccess mode\n\nAuthentication via\n\nFunctions\n\nAvailability\n\n\n\n\n\n\n\n\n\nPatient access\n\nNHS login\n\nGet own details\n\nbeta\n\n\n\n\n\n Patient, user-restricted access This access mode allows integrated systems acting on behalf of a patient to access Patient Care FHIR API endpoints by authenticating users with NHS login. ",
+                "url": "https://digital.nhs.uk/developer/api-catalogue/e-referral-service-patient-care-fhir",
+                "contact": "https://digital.nhs.uk/developer/help-and-support",
+                "organisation": "NHS Digital",
+                "documentation-url": "https://digital.nhs.uk/developer/api-catalogue/e-referral-service-patient-care-fhir"
+            }
+        },
+        {
+            "api-version": "api.gov.uk/v1alpha",
+            "data": {
                 "name": "Female Genital Mutilation - Information Sharing - FHIR API",
                 "description": " \n\nUse this API to share female genital mutilation (FGM) information for children under 18 with relevant NHS professionals across England.\n\nYou can:\n\n\n\ncreate an FGM indicator for a patient\n\ndelete an FGM indicator for a patient\n\nquery a patient's FGM status\n\n\n\nThis API is only for use when the end user is a healthcare worker, not a patient.\u00a0\n\nFor more details, see Introduction to the FGM Information Sharing Service.\n\nNote that older versions 1.0 and 2.0.0 are no longer supported.\n\nSpine Mini Service Provider (SMSP) options\n\nThere are also commercially available products which give easier access to FGM-IS, known as\u00a0Spine Mini Service Providers (SMSPs).\n\nThese and other conforming software products are listed in our\u00a0Conformance Catalogue.\n\nIf you are interested in becoming a provider of one of these products, see\u00a0Female Genital Mutilation - Information Sharing - SMSP API standards. ",
                 "url": "https://digital.nhs.uk/developer/api-catalogue/female-genital-mutilation-information-sharing-fhir",
@@ -731,22 +742,11 @@
             "api-version": "api.gov.uk/v1alpha",
             "data": {
                 "name": "Service Search API",
-                "description": " \n\nUse this API to find information about NHS services, including lists of NHS organisation types, organisations, and coronavirus (COVID 19) walk-in sites.\n\n\n\n\n\nsearch for NHS organisation types,\u00a0for example, GP practices, hospitals\n\n\n\n\n\nsearch for NHS organisations that provide services listed in NHS service near you,\u00a0for example,\u00a0Leeds General Infirmary\n\n\n\n\n\nsearch for coronavirus (COVID 19) walk-in sites\n\n\n\n ",
+                "description": " \n\nUse this API to find information about NHS healthcare services, including lists of NHS organisation types, organisations, and coronavirus (COVID-19) walk-in sites.\n\n\n\n\n\nsearch for NHS organisation types,\u00a0for example, GP practices, hospitals\n\n\n\n\n\nsearch for NHS organisations that provide services listed in NHS service near you,\u00a0for example,\u00a0Leeds General Infirmary\n\n\n\n\n\nsearch for coronavirus (COVID-19) walk-in sites\n\n\n\n ",
                 "url": "https://digital.nhs.uk/developer/api-catalogue/service-search",
                 "contact": "https://digital.nhs.uk/developer/help-and-support",
                 "organisation": "NHS Digital",
                 "documentation-url": "https://digital.nhs.uk/developer/api-catalogue/service-search"
-            }
-        },
-        {
-            "api-version": "api.gov.uk/v1alpha",
-            "data": {
-                "name": "Service Search - REST API",
-                "description": " Use this API to find information about NHS services, including lists of NHS organisation types and organisations. You can: \n\nsearch for NHS organisation types, for example, GP practices, hospitals\n\nsearch for NHS organisations that provide services listed in NHS service near you, for example, Leeds General Infirmary\n\n ",
-                "url": "https://digital.nhs.uk/developer/api-catalogue/service-search-rest",
-                "contact": "https://digital.nhs.uk/developer/help-and-support",
-                "organisation": "NHS Digital",
-                "documentation-url": "https://digital.nhs.uk/developer/api-catalogue/service-search-rest"
             }
         },
         {
