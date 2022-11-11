@@ -280,7 +280,7 @@
             "api-version": "api.gov.uk/v1alpha",
             "data": {
                 "name": "Female Genital Mutilation - Information Sharing - FHIR API",
-                "description": " \n\nUse this API to share female genital mutilation (FGM) information for children under 18 with relevant NHS professionals across England.\n\nYou can:\n\n\n\ncreate an FGM indicator for a patient\n\ndelete an FGM indicator for a patient\n\nquery a patient's FGM status\n\n\n\nThis API is only for use when the end user is a healthcare worker, not a patient.\u00a0\n\nFor more details, see Introduction to the FGM Information Sharing Service.\n\nNote that older versions 1.0 and 2.0.0 are no longer supported.\n\nSpine Mini Service Provider (SMSP) options\n\nThere are also commercially available products which give easier access to FGM-IS, known as\u00a0Spine Mini Service Providers (SMSPs).\n\nThese and other conforming software products are listed in our\u00a0Conformance Catalogue.\n\nIf you are interested in becoming a provider of one of these products, see\u00a0Female Genital Mutilation - Information Sharing - SMSP API standards. ",
+                "description": " \n\nUse this API to share female genital mutilation (FGM) information for children under 18 with relevant NHS professionals across England.\n\nYou can:\n\n\n\nquery a patient's FGM status\n\n\n\nYou cannot currently:\n\n\n\ncreate an FGM indicator for a patient\n\ndelete an FGM indicator for a patient\n\n\n\nThis API is only for use when the end user is a healthcare worker, not a patient.\u00a0\n\nFor more details, see Introduction to the FGM Information Sharing Service. ",
                 "url": "https://digital.nhs.uk/developer/api-catalogue/female-genital-mutilation-information-sharing-fhir",
                 "contact": "https://digital.nhs.uk/developer/help-and-support",
                 "organisation": "NHS Digital",
@@ -532,12 +532,23 @@
         {
             "api-version": "api.gov.uk/v1alpha",
             "data": {
-                "name": "NHS CIS2 Care Identity Authentication - API",
+                "name": "NHS CIS2 Care Identity Authentication API",
                 "description": " \n\nUse this API to access NHS Care Identity Service 2 (NHS CIS2)\u00a0- the national service for verifying the identity of healthcare workers in England, such as NHS staff, when they access national clinical information systems. You can also get basic profile information about these end users.\n\nYou can authenticate the healthcare workers using:\n\n\n\na CIS smartcard -\u00a0with or without the Credential Management Application\n\nan iPad\u00a0\n\na Windows 10 tablet\u00a0\n\na security key\n\n\n\nFor further details, see\u00a0Ways to authenticate using NHS Care Identity Service 2. ",
                 "url": "https://digital.nhs.uk/developer/api-catalogue/nhs-cis2-care-identity-authentication",
                 "contact": "https://digital.nhs.uk/developer/help-and-support",
                 "organisation": "NHS Digital",
                 "documentation-url": "https://digital.nhs.uk/developer/api-catalogue/nhs-cis2-care-identity-authentication"
+            }
+        },
+        {
+            "api-version": "api.gov.uk/v1alpha",
+            "data": {
+                "name": "NHS CIS Authentication (Spine Security Broker) API",
+                "description": " \n\nUse this API to verify the identity of healthcare workers\u00a0in England, such as NHS staff. It provides a single sign-on capability\u00a0across local and national digital services using physical and virtual smartcards.\n\nThis API is also known as the Spine Security Broker (SSB), and is part of the NHS Care Identity Service (CIS).\n\nYou can:\n\n\n\naccess the Identity Server which serves up SSO Tokens and manages the sessions for users who have been successfully authenticated\n\naccess the\u00a0Identity Agent on the end user's workstation, which mediates the authentication transaction and serves subsequent user information on demand as part of the application's\u00a0authorisation process\n\naccess the\u00a0Client Signing Interface, which provides client-side digital signing functions for the purposes of Content Commitment. This interface primarily uses cryptographic functions that execute on a user\u2019s smart card.\n\n\n\nUsers can only be\u00a0authenticated if they are formally registered on the Spine. This\u00a0includes creating\u00a0a user profile, stored in the\u00a0Spine Directory Service\u00a0(SDS), containing the user\u2019s roles and other information that the Registration Authority or Service deems necessary to make appropriate data access decisions.\n\nThis authentication service makes use of smartcards\u00a0to provide strong authentication for health care workers to control access to national services. It is being replaced by\u00a0NHS Care Identity Service 2 (NHS CIS2), which provides\u00a0additional\u00a0authentication methods\u00a0for scenarios\u00a0where a smartcard might not be\u00a0preferred or\u00a0appropriate.\n\nThis API is described fully in the Spine External Interface Specification (EIS). Part 6 has the overview and part 7 the formal API specifications. These are\u00a0a set of Word documents that provide system developers - architects, designers\u00a0and builders -\u00a0with the necessary information to connect to Spine national services. ",
+                "url": "https://digital.nhs.uk/developer/api-catalogue/spine-security-broker",
+                "contact": "https://digital.nhs.uk/developer/help-and-support",
+                "organisation": "NHS Digital",
+                "documentation-url": "https://digital.nhs.uk/developer/api-catalogue/spine-security-broker"
             }
         },
         {
@@ -780,17 +791,6 @@
                 "contact": "https://digital.nhs.uk/developer/help-and-support",
                 "organisation": "NHS Digital",
                 "documentation-url": "https://digital.nhs.uk/developer/api-catalogue/spine-directory-service-ldap"
-            }
-        },
-        {
-            "api-version": "api.gov.uk/v1alpha",
-            "data": {
-                "name": "Spine Security Broker API",
-                "description": " \n\nUse this API\u00a0to implement single sign-on for healthcare workers using NHS smartcards.\n\nYou can:\n\n\n\naccess the Identity Server which serves up SSO Tokens and manages the sessions for users who have been successfully authenticated\n\naccess the\u00a0Identity Agent on the end user's workstation, which mediates the authentication transaction and serves subsequent user information on demand as part of the application's\u00a0authorisation process\n\naccess the\u00a0Client Signing Interface, which provides client-side digital signing functions for the purposes of Content Commitment. This interface primarily uses cryptographic functions that execute on a user\u2019s smart card.\n\n\n\nUsers can only be\u00a0authenticated if they are formally registered to the Spine. This\u00a0includes creating\u00a0a user profile, stored in the\u00a0Spine Directory Service\u00a0(SDS), containing the user\u2019s roles and other information that the Registration Authority or Service deems necessary to make appropriate data access decisions.\n\nThis authentication service is also known as the Care Identity Service (CIS). It makes use of smartcards\u00a0to provide strong authentication for health care workers to control access to national services. It is being replaced by\u00a0NHS Care Identity Service 2 (NHS CIS2), which provides\u00a0additional\u00a0authentication methods\u00a0for scenarios\u00a0where a smartcard might not be\u00a0preferred or\u00a0appropriate.\n\nThis API is described fully in the Spine External Interface Specification (EIS). Part 6 has the overview and part 7 the formal API specifications. These are\u00a0a set of Word documents that provide system developers - architects, designers\u00a0and builders -\u00a0with the necessary information to connect to Spine national services. ",
-                "url": "https://digital.nhs.uk/developer/api-catalogue/spine-security-broker",
-                "contact": "https://digital.nhs.uk/developer/help-and-support",
-                "organisation": "NHS Digital",
-                "documentation-url": "https://digital.nhs.uk/developer/api-catalogue/spine-security-broker"
             }
         },
         {
