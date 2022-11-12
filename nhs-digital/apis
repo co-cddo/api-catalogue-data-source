@@ -169,6 +169,17 @@
         {
             "api-version": "api.gov.uk/v1alpha",
             "data": {
+                "name": "Directory of Healthcare Services (Service Search) API",
+                "description": " \n\nUse this API to find information about NHS healthcare services, including lists of NHS organisation types, organisations, and coronavirus (COVID-19) walk-in sites.\n\nYou can:\n\n\n\n\n\nsearch for NHS organisation types,\u00a0for example, GP practices or hospitals\n\n\n\n\n\nsearch for NHS organisations that provide healthcare services listed in NHS service near you,\u00a0for example,\u00a0Leeds General Infirmary\n\n\n\n\n\nsearch for coronavirus (COVID-19) walk-in sites\n\n\n\n\n\nThis API was previously known as the Service Search API. ",
+                "url": "https://digital.nhs.uk/developer/api-catalogue/directory-of-healthcare-services",
+                "contact": "https://digital.nhs.uk/developer/help-and-support",
+                "organisation": "NHS Digital",
+                "documentation-url": "https://digital.nhs.uk/developer/api-catalogue/directory-of-healthcare-services"
+            }
+        },
+        {
+            "api-version": "api.gov.uk/v1alpha",
+            "data": {
                 "name": "Directory of Services - Urgent and Emergency Care - REST API",
                 "description": " \n\nUse this API to access Directory of Services (DoS) information on a wide range of health and care services across England.\u00a0\n\nYou can search for services based on a combination of parameters:\u00a0\n\n\n\nthe patient\u2019s age, sex, and current location\n\nthe patient\u2019s clinical need\n\n\n\nYou can also search for services using similar parameters, such as by:\n\n\n\nservice type - find matching service type ID, location and optional patient details\n\nclinical term - find matching symptoms, location and optional patient details\n\nODS code - find active services with a matching ODS code\n\nservice ID - find active services with a matching service identifier\n\n\n\nThis service\u00a0is widely used in an Urgent and Emergency Care context.\n\nIt is not currently suitable for referrals from services using NHS Pathways outcomes, such as NHS 111 - for this, use the\u00a0Directory of Services - Urgent and Emergency Care - SOAP API.\n\nYou need a valid DoS account to use this API. ",
                 "url": "https://digital.nhs.uk/developer/api-catalogue/directory-of-services-urgent-and-emergency-care-rest",
@@ -545,10 +556,10 @@
             "data": {
                 "name": "NHS CIS Authentication (Spine Security Broker) API",
                 "description": " \n\nUse this API to verify the identity of healthcare workers\u00a0in England, such as NHS staff. It provides a single sign-on capability\u00a0across local and national digital services using physical and virtual smartcards.\n\nThis API is also known as the Spine Security Broker (SSB), and is part of the NHS Care Identity Service (CIS).\n\nYou can:\n\n\n\naccess the Identity Server which serves up SSO Tokens and manages the sessions for users who have been successfully authenticated\n\naccess the\u00a0Identity Agent on the end user's workstation, which mediates the authentication transaction and serves subsequent user information on demand as part of the application's\u00a0authorisation process\n\naccess the\u00a0Client Signing Interface, which provides client-side digital signing functions for the purposes of Content Commitment. This interface primarily uses cryptographic functions that execute on a user\u2019s smart card.\n\n\n\nUsers can only be\u00a0authenticated if they are formally registered on the Spine. This\u00a0includes creating\u00a0a user profile, stored in the\u00a0Spine Directory Service\u00a0(SDS), containing the user\u2019s roles and other information that the Registration Authority or Service deems necessary to make appropriate data access decisions.\n\nThis authentication service makes use of smartcards\u00a0to provide strong authentication for health care workers to control access to national services. It is being replaced by\u00a0NHS Care Identity Service 2 (NHS CIS2), which provides\u00a0additional\u00a0authentication methods\u00a0for scenarios\u00a0where a smartcard might not be\u00a0preferred or\u00a0appropriate.\n\nThis API is described fully in the Spine External Interface Specification (EIS). Part 6 has the overview and part 7 the formal API specifications. These are\u00a0a set of Word documents that provide system developers - architects, designers\u00a0and builders -\u00a0with the necessary information to connect to Spine national services. ",
-                "url": "https://digital.nhs.uk/developer/api-catalogue/spine-security-broker",
+                "url": "https://digital.nhs.uk/developer/api-catalogue/nhs-cis-authentication-spine-security-broker",
                 "contact": "https://digital.nhs.uk/developer/help-and-support",
                 "organisation": "NHS Digital",
-                "documentation-url": "https://digital.nhs.uk/developer/api-catalogue/spine-security-broker"
+                "documentation-url": "https://digital.nhs.uk/developer/api-catalogue/nhs-cis-authentication-spine-security-broker"
             }
         },
         {
@@ -747,17 +758,6 @@
                 "contact": "https://digital.nhs.uk/developer/help-and-support",
                 "organisation": "NHS Digital",
                 "documentation-url": "https://digital.nhs.uk/developer/api-catalogue/reasonable-adjustment-flag-fhir"
-            }
-        },
-        {
-            "api-version": "api.gov.uk/v1alpha",
-            "data": {
-                "name": "Service Search API",
-                "description": " \n\nUse this API to find information about NHS healthcare services, including lists of NHS organisation types, organisations, and coronavirus (COVID-19) walk-in sites.\n\n\n\n\n\nsearch for NHS organisation types,\u00a0for example, GP practices, hospitals\n\n\n\n\n\nsearch for NHS organisations that provide services listed in NHS service near you,\u00a0for example,\u00a0Leeds General Infirmary\n\n\n\n\n\nsearch for coronavirus (COVID-19) walk-in sites\n\n\n\n ",
-                "url": "https://digital.nhs.uk/developer/api-catalogue/service-search",
-                "contact": "https://digital.nhs.uk/developer/help-and-support",
-                "organisation": "NHS Digital",
-                "documentation-url": "https://digital.nhs.uk/developer/api-catalogue/service-search"
             }
         },
         {
