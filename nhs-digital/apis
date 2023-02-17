@@ -730,6 +730,17 @@
         {
             "api-version": "api.gov.uk/v1alpha",
             "data": {
+                "name": "Personal Demographics Service MESH",
+                "description": " \n\nUse this message integration to search the Personal Demographics Service (PDS) for patient details, using the MESH UI.\n\nThe PDS MESH service - formerly known as\u00a0Master Patient Trace (MPT)\u00a0- is provided for organisations that do not want to write their own software - typically NHS trusts or local authorities.\n\nIt is not intended for software integration - use the PDS FHIR API instead.\n\nIt is a batch message integration.\u00a0 It does not expect an immediate response from PDS.\n\nIt requires PDS access approval\u00a0and a MESH mailbox set up before you can use it.\n\nYou can:\n\n\n\ncreate a file containing a trace request\n\nsend the trace request to PDS\n\ncheck for replies and download the response\n\n\n\nFor how to use PDS MESH, see\u00a0Using the PDS MESH service with the MESH user interface. ",
+                "url": "https://digital.nhs.uk/developer/api-catalogue/personal-demographic-service-mesh",
+                "contact": "https://digital.nhs.uk/developer/help-and-support",
+                "organisation": "NHS Digital",
+                "documentation-url": "https://digital.nhs.uk/developer/api-catalogue/personal-demographic-service-mesh"
+            }
+        },
+        {
+            "api-version": "api.gov.uk/v1alpha",
+            "data": {
                 "name": "Personal Demographics Service Notifications - FHIR",
                 "description": " \n\n \n\n\n\n\u00a0\n\nUse this integration to receive notifications about changes to a patient's demographic details, including:\n\n\n\nbirth notifications - although another option is PDS HL7 V3 API\n\ndeath notifications\n\nchange of address\n\nchange of GP\n\nany record change (beta) - to notify subscribers to synchronise their local PDS patient database\n\n\n\nWe share information about these events with healthcare workers in other organisations such as GPs, Emergency Departments and Local Authorities.\n\nThis integration uses a\u00a0publish-subscribe\u00a0model - the sending system publishes events to\u00a0National Events Management Service (NEMS), and NEMS forwards the events to all subscribed systems via\u00a0Message Exchange for Social Care and Health (MESH).\n\nFor example, when we update\u00a0Personal\u00a0Demographics Service (PDS)\u00a0with a birth, PDS sends a birth notification event\u00a0containing information about the birth to NEMS.\u00a0NEMS then sends the event to all\u00a0healthcare workers who have subscribed to receive\u00a0birth notifications. \n\n",
                 "url": "https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-notifications-fhir",
