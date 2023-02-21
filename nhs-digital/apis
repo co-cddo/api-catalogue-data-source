@@ -609,6 +609,17 @@
         {
             "api-version": "api.gov.uk/v1alpha",
             "data": {
+                "name": "Online Consultation - MESH",
+                "description": " \n\n \n\n\n\n\u00a0\n\nUse this message integration to send an online consultation form from a patient to a registered GP.\n\nThis integration uses MESH to send and receive messages. \n\n",
+                "url": "https://digital.nhs.uk/developer/api-catalogue/online-consultation",
+                "contact": "https://digital.nhs.uk/developer/help-and-support",
+                "organisation": "NHS Digital",
+                "documentation-url": "https://digital.nhs.uk/developer/api-catalogue/online-consultation"
+            }
+        },
+        {
+            "api-version": "api.gov.uk/v1alpha",
+            "data": {
                 "name": "Ophthalmic Payments API",
                 "description": " \n\nUse this API to submit the\u00a0General Ophthalmic Service\u00a0(GOS) payment claims to Primary Care Support England\u00a0(PCSE). Electronic claims are submitted via Practice Management Systems (PMS) and paper based claims are submitted via a bulk scanning\u00a0facility, provided by Capita Intelligent Communications (CIC).\n\nActivity data about NHS sight tests, optical vouchers, repairs and replacement are collected via a series of GOS payment claim forms.\n\n\n\n\n\n\n\nGOS1 \u2013 Application for an NHS funded sight test\n\nGOS3 \u2013 NHS optical vouchers and patient statement\n\nGOS4 \u2013 NHS optical repair/replacement vouchers application form\n\nGOS5 \u2013 Private sight tests with partial help towards the full costs\n\nGOS6 \u2013 Application for a mobile NHS funded sight test\n\n\n\nYou can electronically:\n\n\n\nsubmit GOS1 claims from PMS and bulk scanning facility to PCSE\n\nsubmit GOS3 claims from PMS and bulk scanning facility to PCSE\n\nsubmit GOS4 claims from PMS and bulk scanning facility to PCSE\n\nsubmit GOS5 claims from PMS and bulk scanning facility to PCSE\n\nsubmit GOS6 claims from PMS and bulk scanning facility to PCSE\n\nsubmit GOS6 pre-visit notifications from PMS to PCSE\n\nsubmit and retrieve GOS3 voucher only between PMS and PCSE\n\nsubmit a status request to PCSE\n\n\n\nYou cannot submit:\n\n\n\n\n\nGOS2 claims\n\n\n\nhealth cost 5 (HC5) refund claims\u00a0\n\npre-registration training (PRT) grant claims\n\ncontinuing education and training (CET) claims\n\n\n\nA single GOS message can contain multiple claims for payment of a single GOS claim type, i.e. batch submission is allowed. A message cannot contain a mix of different GOS claim types.\n\n\n\n\n\nYou can also submit GOS payment claims via PCSE Online. For further information, see Ophthalmic payments. ",
                 "url": "https://digital.nhs.uk/developer/api-catalogue/ophthalmic-payments",
