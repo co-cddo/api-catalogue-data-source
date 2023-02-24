@@ -367,6 +367,50 @@
         {
             "api-version": "api.gov.uk/v1alpha",
             "data": {
+                "name": "GP Connect (Patient Facing) Access Record - FHIR API",
+                "description": "  Use this API to access structured and coded information from a patient's GP practice record to consume in a patient facing service. The API accesses GP principal supplier systems and provides a consistent interface and data model. You can retrieve patient record data for the following: \n\nmedications\n\nallergies\n\nimmunisations\n\nconsultations\n\nproblems\n\ninvestigations\n\nattachments\n\nuncategorised data (other clinically coded items that are present in the record)\n\n You cannot currently use this API to: \n\nwrite back to the GP record\n\n ",
+                "url": "https://digital.nhs.uk/developer/api-catalogue/gp-connect-patient-facing-access-record-fhir",
+                "contact": "https://digital.nhs.uk/developer/help-and-support",
+                "organisation": "NHS Digital",
+                "documentation-url": "https://digital.nhs.uk/developer/api-catalogue/gp-connect-patient-facing-access-record-fhir"
+            }
+        },
+        {
+            "api-version": "api.gov.uk/v1alpha",
+            "data": {
+                "name": "GP Connect (Patient Facing) Appointment Management - FHIR API",
+                "description": " \n\nUse this API to book and manage patient appointments at their GP practice.\n\nYou can: \n\nsearch for free slots\n\nbook an appointment\n\nretrieve a patient\u2019s appointments\n\nget details of a single appointment\n\ncancel an appointment\n\nYou cannot:\n\namend a patient's appointments beyond cancelling\n\nre-schedule a patient's appointments (this must be done by cancelling and re-booking)\n\nTo use this API, the end user must be a patient who is:\n\nregistered with the GP practice\n\nregistered with NHS login to P9 identity verification level\n\n ",
+                "url": "https://digital.nhs.uk/developer/api-catalogue/gp-connect-patient-facing-appointment-management-fhir",
+                "contact": "https://digital.nhs.uk/developer/help-and-support",
+                "organisation": "NHS Digital",
+                "documentation-url": "https://digital.nhs.uk/developer/api-catalogue/gp-connect-patient-facing-appointment-management-fhir"
+            }
+        },
+        {
+            "api-version": "api.gov.uk/v1alpha",
+            "data": {
+                "name": "GP Connect (Patient Facing) Prescriptions - FHIR API",
+                "description": "  Use this API to manage a patient's prescriptions as held by their GP practice. You can: \n\n\n\nrequest a new instance of a repeat prescription\n\n\n\n\n\nview all of a patients medications, whether acute or repeat, past or present\n\n\n\n\n\ncancel a repeat prescription request\n\n\n\n\n\ncheck the status of a current prescription request\n\n\n\n\n\nrequest a new instance of a repeat prescription to a one off nomination pharmacy\n\n\n\n The end user must be a patient who is: \n\n\n\nregistered with the GP practice\n\n\n\n\n\nregistered with NHS login to P9 identity verification level\n\n\n\n For example: \n\na patient can view their own medication, request a new instance of a repeat prescription and cancel that request\n\n ",
+                "url": "https://digital.nhs.uk/developer/api-catalogue/gp-connect-patient-facing-prescriptions-fhir",
+                "contact": "https://digital.nhs.uk/developer/help-and-support",
+                "organisation": "NHS Digital",
+                "documentation-url": "https://digital.nhs.uk/developer/api-catalogue/gp-connect-patient-facing-prescriptions-fhir"
+            }
+        },
+        {
+            "api-version": "api.gov.uk/v1alpha",
+            "data": {
+                "name": "GP Connect (Patient Facing) User Permissions API",
+                "description": "  Use this API to list and manage the permissions a patient has to their\n\nmedical record and a selection of services provided at their GP practice. You can: \n\nget a patient's permissions\n\nrequest to update a patient's permissions to a higher level\n\n You cannot: \n\nrequest to update a patient's permissions to a lower level\n\n To use this API, the end user must be a patient who is: \n\nregistered with the GP practice\n\nregistered with NHS login to P9 identity verification level\n\n This API allows you to manage the permissions for: \n\nappointments\n\nprescriptions\n\nmedical record\n\n This API is designed to respect the policy changes made in order to\n\nallow patients to access their future medical record entries.\n\nFor more details, see\n\naccess to patient records through the NHS App. ",
+                "url": "https://digital.nhs.uk/developer/api-catalogue/gp-connect-patient-facing-user-permissions",
+                "contact": "https://digital.nhs.uk/developer/help-and-support",
+                "organisation": "NHS Digital",
+                "documentation-url": "https://digital.nhs.uk/developer/api-catalogue/gp-connect-patient-facing-user-permissions"
+            }
+        },
+        {
+            "api-version": "api.gov.uk/v1alpha",
+            "data": {
                 "name": "GP Connect Access Document - FHIR API",
                 "description": " \n\nUse this\u00a0API\u00a0to retrieve unstructured documents from a patient\u2019s GP practice record. Unstructured documents are usually clinical documents\u00a0received from various health and care settings and held by a patient's registered GP practice.\n\nYou can:\n\n\n\nsearch for a patient\u2019s documents\n\nretrieve a document\n\n\n\nFor example, a district nurse attends a patient at home and views their hospital discharge summary held by their GP practice.\n\nFor more details, see the GP Connect specifications for developers. ",
                 "url": "https://digital.nhs.uk/developer/api-catalogue/gp-connect-access-document-fhir",
