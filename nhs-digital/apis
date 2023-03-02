@@ -379,7 +379,7 @@
             "api-version": "api.gov.uk/v1alpha",
             "data": {
                 "name": "GP Connect (Patient Facing) Appointment Management - FHIR API",
-                "description": " \n\nUse this API to book and manage patient appointments at their GP practice.\n\nYou can: \n\nsearch for free slots\n\nbook an appointment\n\nretrieve a patient\u2019s appointments\n\nget details of a single appointment\n\ncancel an appointment\n\nYou cannot:\n\namend a patient's appointments beyond cancelling\n\nre-schedule a patient's appointments (this must be done by cancelling and re-booking)\n\nTo use this API, the end user must be a patient who is:\n\nregistered with the GP practice\n\nregistered with NHS login to P9 identity verification level\n\n ",
+                "description": " \n\nUse this API to book and manage patient appointments at their GP practice. You can: \n\nsearch for free slots\n\nbook an appointment\n\nretrieve a patient\u2019s appointments\n\nget details of a single appointment\n\ncancel an appointment\n\n You cannot: \n\namend a patient's appointments beyond cancelling\n\nre-schedule a patient's appointments (this must be done by cancelling and re-booking)\n\n To use this API, the end user must be a patient who is: \n\nregistered with the GP practice\n\nregistered with NHS login to P9 identity verification level\n\n ",
                 "url": "https://digital.nhs.uk/developer/api-catalogue/gp-connect-patient-facing-appointment-management-fhir",
                 "contact": "https://digital.nhs.uk/developer/help-and-support",
                 "organisation": "NHS Digital",
