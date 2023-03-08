@@ -840,6 +840,17 @@
         {
             "api-version": "api.gov.uk/v1alpha",
             "data": {
+                "name": "Radiology MESH",
+                "description": " \n\n \n\n\n\n\u00a0\n\nUse this message integration to send radiology messages from a radiology department to a GP system over MESH.\u00a0\u00a0\n\nIt uses MESH to send and receive messages.\n\nBefore you begin any development work using this integration,\u00a0contact us\u00a0to discuss your best options. \n\n",
+                "url": "https://digital.nhs.uk/developer/api-catalogue/radiology-mesh",
+                "contact": "https://digital.nhs.uk/developer/help-and-support",
+                "organisation": "NHS Digital",
+                "documentation-url": "https://digital.nhs.uk/developer/api-catalogue/radiology-mesh"
+            }
+        },
+        {
+            "api-version": "api.gov.uk/v1alpha",
+            "data": {
                 "name": "Reasonable Adjustment Flag - FHIR API",
                 "description": " Use this API to access and update the Reasonable Adjustment Flag - a national record which indicates that a patient requires reasonable adjustments and optionally includes details of impairments and adjustments to be considered. You can: \n\ncheck if a Reasonable Adjustment Flag exists\n\nread a Reasonable Adjustment Flag\n\ncreate a Reasonable Adjustment Flag\n\nupdate a Reasonable Adjustment Flag\n\nremove a Reasonable Adjustment Flag\n\n The flag consists of three parts: \n\ndetails of consent to share the Flag and how this was obtained. Consent may have been given by the patient or via a 'best interest decision' under the Mental Capacity Act (2005). In some cases consent can also be obtained from a lasting power of attorney for health and welfare or a court appointed deputy.\n\ndetails of impairments, which enable clinicians to understand the range of adjustments the patient may require. Note that the patient may decline to say what their impairments are.\n\ndetails of reasonable adjustments to services which are needed by the patient when providing their care.\n\n This API can only be used by relevant health and care staff providing direct care, authenticated with an NHS smartcard or equivalent. The existance of a flag is intended to be visible to all staff who have access to the patient record.  The contents of the Flag may only be visible to clinical staff - as determined by role-based access controls (RBAC). For more details see Registration authorities and smartcards. To find out more about how the flag works, categories and types of adjustments and the recording of impairments see How the Reasonable Adjustment Flag works. To watch a video of a Reasonable Adjustment Flag being created in SCRa see Creating a Reasonable Adjustment Flag on the NHS Spine. ",
                 "url": "https://digital.nhs.uk/developer/api-catalogue/reasonable-adjustment-flag-fhir",
