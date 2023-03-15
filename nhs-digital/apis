@@ -841,7 +841,7 @@
             "api-version": "api.gov.uk/v1alpha",
             "data": {
                 "name": "Radiology MESH",
-                "description": " \n\n \n\n\n\n\u00a0\n\nUse this message integration to send radiology messages from a radiology department to a GP system over MESH.\u00a0\u00a0\n\nIt uses MESH to send and receive messages.\n\nBefore you begin any development work using this integration,\u00a0contact us\u00a0to discuss your best options. \n\n",
+                "description": " \n\n \n\n\n\n\u00a0\n\nUse this message integration to send radiology messages from a radiology department to a GP system over MESH.\u00a0\u00a0\n\nIt uses MESH to send and receive messages. \n\n",
                 "url": "https://digital.nhs.uk/developer/api-catalogue/radiology-mesh",
                 "contact": "https://digital.nhs.uk/developer/help-and-support",
                 "organisation": "NHS Digital",
