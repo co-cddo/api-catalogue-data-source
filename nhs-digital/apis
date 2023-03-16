@@ -92,17 +92,6 @@
         {
             "api-version": "api.gov.uk/v1alpha",
             "data": {
-                "name": "COVID-19 Medical Exemptions - FHIR API",
-                "description": " Use this API to access a patient\u2019s coronavirus (COVID-19) medical exemption status. You can: \n\nget a patient's COVID-19 medical exemption status, based on their NHS number\n\n You get the following data: \n\ncurrent COVID-19 medical exemption status\n\nembedded Patient demographic details, including date of birth.\n\n The patient demographic details might differ from those held in the Personal Demographics Service (PDS).\n\nTo get demographic details from PDS, use the Personal Demographics Service FHIR API. Data standards This API uses the FHIR standard, and includes the resources: \n\nBundle\n\nPatient\n\nQuestionnaireResponse\n\n It references resources: \n\nQuestionnaire specifically COVID-19 Vaccination Medical Exemption Questionnaire\n\n Data availability, timing and quality All exemption records are verified to ensure the NHS number is correct before making them available via the API. In most cases this is automatic, and the record is available within 48 hours of the exemption being recorded, sometimes sooner. Where automated NHS number verification fails, we verify the NHS number manually, which can take longer. In a very small number of cases, we are unable to verify the NHS number, and we do not make the medical exemption available at all. ",
-                "url": "https://digital.nhs.uk/developer/api-catalogue/covid-19-medical-exemptions-fhir",
-                "contact": "https://digital.nhs.uk/developer/help-and-support",
-                "organisation": "NHS Digital",
-                "documentation-url": "https://digital.nhs.uk/developer/api-catalogue/covid-19-medical-exemptions-fhir"
-            }
-        },
-        {
-            "api-version": "api.gov.uk/v1alpha",
-            "data": {
                 "name": "COVID-19 Test Results - FHIR API",
                 "description": " Use this API to access a patient\u2019s coronavirus (COVID-19) test results history. You can: \n\nget a patient's COVID-19 test history, based on their NHS number with an optional specific date range\n\n You cannot currently use this API to: \n\nget details of other types of test\n\n You get the following data: \n\nCOVID-19 test event details\n\n Data availability, timing and quality All test records are verified to ensure the NHS number is correct before making them available via the API. In most cases this is automatic, and the record is available within 48 hours of the test event, sometimes sooner. In a very small number of cases, we are unable to verify the NHS number, and we do not make the test record available at all. ",
                 "url": "https://digital.nhs.uk/developer/api-catalogue/covid-19-test-results-fhir",
