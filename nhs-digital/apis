@@ -687,7 +687,7 @@
             "api-version": "api.gov.uk/v1alpha",
             "data": {
                 "name": "Organisation Data Service - ORD API",
-                "description": " \n\nUse this API to access details of health and social care organisations in England and Wales, such as trusts or GP practices, using our Organisation Data Service (ODS).\u00a0This ORD compatible API contains the full dataset from ODS, and the ODS FHIR API contains a reduced dataset, most useful for helping with transactions\n\nYou can:\n\n\n\nsearch for organisations\n\nget the\u00a0organisation details for a given ODS code\n\nget a list of recently modified organisations\n\nget metadata for roles, relationships and record classes\n\nget\u00a0a list of organisations that have been modified since a specific date to synchronise data locally\n\n\n\nAn ODS code is a\u00a0unique identification codes for an organisation\u00a0that\u00a0interact\u00a0with any area of the NHS. For more details, see Organisation Data Service: Guidance for developers\u00a0.\n\nThis API returns the following full dataset for an organisation, when searched\u00a0with an ODS code:\n\n\n\norganisation - ODS code, name, open date, close\u00a0 date, last change date and status if active or inactive\n\naddress - house or flat number,\u00a0line 1, line 2, line 3, town, postcode and\u00a0country\n\ncontacts - email, website, telephone and fax\n\nroles - primary and non-primary roles\n\nrelationships - legal and operational relationships including history where it was captured by ODS\n\nsuccession - history of legal succession following reconfiguration or mergers\n\nadditional attributes - data items included to support policy and pragmatic change\n\n\n\nFor an alternative API that returns reduced dataset, see Related APIs below. ",
+                "description": " \n\nUse this API to access details of health and social care organisations in England and Wales, such as trusts or GP practices, using our Organisation Data Service (ODS).\u00a0\n\nThis ORD-compatible API contains the full dataset from ODS, including information on succession (history) and relationships.\n\nWe also have an\u00a0ODS FHIR API\u00a0which contains a reduced dataset, most useful for transactions.\n\nYou can:\n\n\n\nsearch for organisations\n\nget the\u00a0organisation details for a given ODS code\n\nget a list of recently modified organisations\n\nget metadata for roles, relationships and record classes\n\nget\u00a0a list of organisations that have been modified since a specific date to synchronise data locally\n\n\n\nAn ODS code is a\u00a0unique identification code for an organisation\u00a0that\u00a0interacts with any area of the NHS.\u00a0\n\nThis API returns the following full dataset for an organisation, when searched\u00a0with an ODS code:\n\n\n\norganisation - ODS code, name, open date, close\u00a0 date, last change date and status if active or inactive\n\naddress - house or flat number,\u00a0line 1, line 2, line 3, town, postcode and\u00a0country\n\ncontacts - email, website, telephone and fax\n\nroles - primary and non-primary roles\n\nrelationships - legal and operational relationships including history where it was captured by ODS\n\nsuccession - history of legal succession following reconfiguration or mergers\n\nadditional attributes - data items included to support policy and pragmatic change\n\n\n\nFor an alternative API that returns a reduced dataset, use the ODS FHIR API. ",
                 "url": "https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-ord",
                 "contact": "https://digital.nhs.uk/developer/help-and-support",
                 "organisation": "NHS Digital",
@@ -956,6 +956,17 @@
                 "contact": "https://digital.nhs.uk/developer/help-and-support",
                 "organisation": "NHS Digital",
                 "documentation-url": "https://digital.nhs.uk/developer/api-catalogue/transfer-of-care-mental-health-discharge-fhir"
+            }
+        },
+        {
+            "api-version": "api.gov.uk/v1alpha",
+            "data": {
+                "name": "Transfer of Care - MESH",
+                "description": " \n\n \n\n\n\n\u00a0\n\nUse this message integration to send transfer of care information from an emergency care provider to a GP practice.\u00a0\u00a0\n\nIt uses MESH to send and receive messages. \n\n",
+                "url": "https://digital.nhs.uk/developer/api-catalogue/transfer-of-care-mesh",
+                "contact": "https://digital.nhs.uk/developer/help-and-support",
+                "organisation": "NHS Digital",
+                "documentation-url": "https://digital.nhs.uk/developer/api-catalogue/transfer-of-care-mesh"
             }
         },
         {
