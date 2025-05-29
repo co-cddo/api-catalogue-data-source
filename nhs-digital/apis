@@ -610,7 +610,7 @@
             "api-version": "api.gov.uk/v1alpha",
             "data": {
                 "name": "NHS login API",
-                "description": " \n\nUse this API to enable patients and the public to access multiple digital health and social care services with NHS login, a single re-usable login.\n\nYou benefit from:\n\n\n\nusing a trusted and secured identity platform\n\nchoosing a proper level of end user verification\n\ndisplaying a brand name the public recognises\n\nmeeting the Identity Verification and Authentication Standard (DCB3051)\n\n\n\nFor more details, see NHS Login: guidance for partners and developers. ",
+                "description": " \n\nUse this API to enable patients and the public to access multiple digital health and social care services with NHS login, a single re-usable login.\n\nYou benefit from:\n\n\n\nusing a trusted and secured identity platform\n\nchoosing a proper level of end user verification\n\ndisplaying a brand name the public recognises\n\nmeeting the Identity Verification and Authentication Standard (DAPB3051)\n\n\n\nFor more details, see NHS Login: guidance for partners and developers. ",
                 "url": "https://digital.nhs.uk/developer/api-catalogue/nhs-login",
                 "contact": "https://digital.nhs.uk/developer/help-and-support",
                 "organisation": "NHS Digital",
